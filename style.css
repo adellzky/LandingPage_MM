@@ -514,7 +514,7 @@ section, footer {
 }
 
 .news-box a {
-  color: #00e0d0;
+  color: #c10104;
   font-weight: bold;
   text-decoration: none;
 }
@@ -646,7 +646,7 @@ section, footer {
 /* Responsive */
 @media (max-width: 48.0rem) {
   .nav-container {
-    flex-direction: row; /* ⬅️ tetap sejajar */
+    flex-direction: row; 
     justify-content: space-between;
     align-items: center;
     padding: 0.6rem 1rem;
@@ -693,7 +693,7 @@ section, footer {
 
   .navbar a.active,
   .navbar a:hover {
-    background: linear-gradient(to right, #60acb0, #13DBED);
+    background: linear-gradient(to right,  #c10104, #620a01);
     color: #000;
   }
 
