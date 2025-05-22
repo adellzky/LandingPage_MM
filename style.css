@@ -30,11 +30,11 @@ section, footer {
 
 /* Header */
 .header {
-  background: url('image/hero.jpg') center/cover no-repeat;
+  background: url('image/landing.jpg') center/cover no-repeat;
   color: #fff;
   text-align: center;
   position: relative;
-  padding: 1.75rem 0.25rem;
+  padding: 0.75rem 0.25rem;
 }
 
 .nav-container {
@@ -55,10 +55,16 @@ section, footer {
 }
 
 .logo {
-  font-weight: bold;
-  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  height: 7.5rem;         
 }
 
+.logo img {
+  height: 100%;           
+  width: auto;
+  object-fit: contain;    
+}
 .navbar a {
   color: #fff;
   text-decoration: none;
@@ -70,8 +76,7 @@ section, footer {
 
 .navbar a.active,
 .navbar a:hover {
-  background: linear-gradient(to right, #60acb0, #13DBED);  
-  color: #000;
+  background: linear-gradient(to right, #c10104, #620a01);  
 }
 
 .hero {
@@ -83,10 +88,6 @@ section, footer {
   line-height: 1.4;
 }
 
-.hero-buttons {
-  margin-top: 1.25rem;
-  transition: background 0.3s ease, color 0.3s ease;
-}
 
 
 .btn {
@@ -99,32 +100,14 @@ section, footer {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-.primary:hover {
-  background: linear-gradient(to right, #13DBED, #22767A);
-}
-.secondary:hover {
-  background: #fff;
-  color: #000;
-}
-
-.primary {
-  background: linear-gradient(to right, #22767A, #13DBED);
-  color: #000;
-}
-
-.secondary {
-  background: transparent;
-  border: 0.125rem solid #fff;
-  color: #fff;
-}
 
 /* Service */
 .service {
   text-align: center;
   padding: 3.75rem 1.25rem;
-  background: radial-gradient(circle at center, #1a1a1a 0%, #000 100%);
+  background: radial-gradient(circle at center, #140505 0%, #000000 100%);
   color: #fff;
-  max-width: fit-content;
+  /* max-width: fit-content; */
 }
 
 .service h2 {
@@ -146,7 +129,7 @@ section, footer {
 }
 
 .service-items .item {
-  background: rgba(255, 255, 255, 0.05);
+  background: #343439;
   padding: 1.25rem;
   border-radius: 0.6rem;
   width: 7.5rem;
@@ -161,7 +144,7 @@ section, footer {
 .service-items i {
   font-size: 1.9rem;
   margin-bottom: 0.7rem;
-  color: #00e0d0;
+  color: #c10104;
 }
 
 .service-items span {
@@ -171,7 +154,7 @@ section, footer {
 
 /* Why Choose */
 .why {
-  background: linear-gradient(to bottom right, #0a0a0a, #111122);
+  background: linear-gradient(to bottom right, #130000, #000000);
   color: #fff;
   padding: 5.0rem 1.25rem;
   text-align: center;
@@ -186,7 +169,7 @@ section, footer {
 }
 
 .why h2 span {
-  border-bottom: 0.2rem solid #00e0d0;
+  border-bottom: 0.2rem solid #c10104;
   padding-bottom: 0.3rem;
 }
 
@@ -217,12 +200,12 @@ section, footer {
 }
 
 .why-center i {
-  color: #00e0d0;
+  color: #c10104;
 }
 
 /* About */
 .about {
-  background: url('image/about.png') center/cover no-repeat;
+  background: url('image/c99.png') center/cover no-repeat;
   color: white;
   padding: 3.75rem 1.25rem;
   font-family: 'Poppins', sans-serif;
@@ -250,7 +233,7 @@ section, footer {
 }
 
 .about-btn {
-  background-color: #3ac2c3;
+  background-color: #c10104;
   color: white;
   font-weight: bold;
   padding: 0.6rem 1.25rem;
@@ -283,7 +266,7 @@ section, footer {
 }
 
 .team .member {
-  background: #22767A;
+  background: #620a01;
   padding: 1.25rem;
   border-radius: 0.6rem;
   width: 12.5rem;
@@ -302,7 +285,7 @@ section, footer {
 }
 
 .portfolio h2 span {
-  border-bottom: 0.2rem solid #00e0d0;
+  border-bottom: 0.2rem solid #c10104;
   padding-bottom: 0.3rem;
 }
 
@@ -332,8 +315,8 @@ section, footer {
 .view-all-btn {
   display: inline-block;
   padding: 0.6rem 1.5rem;
-  background: linear-gradient(to right, #22767A, #13DBED);
-  color: #000;
+  background: #777573;
+  color: #ffffff;
   font-weight: bold;
   border-radius: 1.8rem;
   text-decoration: none;
@@ -341,7 +324,7 @@ section, footer {
 }
 
 .view-all-btn:hover {
-  background: linear-gradient(to right, #13DBED, #22767A);
+  background: linear-gradient(to right,  #c10104, #620a01);
   color: #fff;
 }
 
@@ -383,8 +366,8 @@ section, footer {
 
 .header-portofolio .navbar a.active,
 .header-portofolio .navbar a:hover {
-  background: linear-gradient(to right, #60acb0, #13DBED);  
-  color: #000;
+  background: linear-gradient(to right, #c10104, #620a01);  
+  color: #ffffff;
 }
 
 .header-portofolio .hero-text {
@@ -433,7 +416,7 @@ section, footer {
 }
 
 .portfolio-page .portfolio-card h4 {
-  color: #00e0d0;
+  color: #c10104;
   margin: 0.8rem 0.6rem 0.3rem;
   font-size: 1.2em;
 }
@@ -480,7 +463,7 @@ section, footer {
 }
 
 .news-search-box {
-  border: 0.125rem solid #00e0d0;
+  border: 0.125rem solid #c10104;
   border-radius: 0.6rem;
   padding: 1.25rem;
   margin-bottom: 2.5rem;
@@ -502,7 +485,7 @@ section, footer {
 }
 
 .search-btn {
-  background: linear-gradient(to right, #22767A, #13DBED);
+  background: linear-gradient(to right, #910602, #c10104);
   color: #000;
   border: none;
   padding: 0.6rem 1.25rem;
@@ -520,7 +503,7 @@ section, footer {
 
 .news-box {
   flex: 1 1 18.75rem;
-  border: 0.1rem solid #00e0d0;
+  border: 0.1rem solid #c10104;
   padding: 1.25rem;
   border-radius: 0.6rem;
   min-height: 9.3rem;
@@ -579,12 +562,12 @@ section, footer {
 }
 
 .footer-logo .logo-img {
-  width: 8.0rem;
-  height: 8.0rem;
+  width: 10rem;
+  height: 10rem;
   object-fit: cover;
   border-radius: 50%;
   background: #ccc;
-  box-shadow: 0 0 0.6rem rgba(0,0,0,0.3);
+  box-shadow: 0 0 0.6rem rgb(255, 255, 255);
 }
 
 .footer-info h4 {
@@ -598,7 +581,7 @@ section, footer {
 
 .footer-info i {
   margin-right: 0.5rem;
-  color: #00e0d0;
+  color: #c10104;
 }
 
 .footer-right {
@@ -620,13 +603,14 @@ section, footer {
 
 /* Footer Bottom Bar */
 .footer-bottom {
-  background: linear-gradient(to right,#22767A, #13DBED, #22767A);
-  padding-left: 1.3rem;
-  padding-right: 1.8rem;
+  background: linear-gradient(to right,#620a01, #c10104, #790801);
+  padding-left: 3.5rem;
+  padding-right: 4.5rem;
   width: 100%; 
 }
 
 .footer-bottom-content {
+  max-width: 75.0rem; 
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -640,7 +624,7 @@ section, footer {
 .footer-bottom p {
   margin: 0;
   font-size: 0.9em;
-  color: #000000;
+  color: #ffffff;
 }
 
 .social-icons {
@@ -649,13 +633,13 @@ section, footer {
 }
 
 .social-icons a {
-  color: #000000;
+  color: #ffffff;
   font-size: 1.25rem;
   transition: color 0.3s, transform 0.3s;
 }
 
 .social-icons a:hover {
-  color: #00e0d0;
+  color: #000000;
   transform: scale(1.1);
 }
 
@@ -744,10 +728,10 @@ section, footer {
 
   .footer-left {
     flex-direction: row;       
-    align-items: flex-start;    
+    align-items: center;    
     justify-content: center;    
-    gap: 2rem;
-    padding: 0 1rem;
+    gap: 1.5rem;
+    padding-left: 0.2rem;
     text-align: left;
   }
 
