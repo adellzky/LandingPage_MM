@@ -15,7 +15,10 @@
   <header class="header">
     <div class="nav-container">
       <div class="logo">C9.MULTIMEDIA</div>
-      <nav class="navbar">
+
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+      <nav class="navbar" id="navbar">
         <a href="#" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#service">Service</a>
@@ -182,11 +185,19 @@
           <a href="#"><i class="fab fa-whatsapp"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
-        <p>&copy; 2025 Ironativ. All rights reserved.</p>
+        <p>&copy; 2025 Multimedia. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
+  <script>
+  function toggleMenu() {
+    const navbar = document.getElementById("navbar");
+    navbar.classList.toggle("show");
+  }
+  </script>
+
 
 </body>
 </html>
+
