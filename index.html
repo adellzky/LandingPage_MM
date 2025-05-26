@@ -8,17 +8,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
+  
 </head>
 <body>
-  <!-- Header Section -->
   <header class="header">
     <div class="nav-container">
       <div class="logo">
         <img src="image/logo.png" alt="">
       </div>
 
-      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
 
       <nav class="navbar" id="navbar">
         <a href="#" class="active">Home</a>
@@ -34,46 +33,49 @@
       <p>Buat acara Anda lebih hidup dan berkesan bersama layanan multimedia dari C9 Multimedia.</p>
   </header>
 
+
+
+
  <!-- Service Section -->
     <section class="service" id="service">
-  <div class="container">
-    <h2 class="title">MAIN SERVICE</h2>
-    <p class="subtitle">Kami siap mendukung kebutuhan visual Anda dengan teknologi terkini dan tim berpengalaman.</p>
-    <div class="service-items">
-      <div class="item">
-        <div class="image-wrapper">
-          <img src="image/ca,.jpg" alt="Live Stream">
+      <div class="container">
+        <h2 class="title">MAIN SERVICE</h2>
+        <p class="subtitle">Kami siap mendukung kebutuhan visual Anda dengan teknologi terkini dan tim berpengalaman.</p>
+        <div class="service-items">
+          <div class="item">
+            <div class="image-wrapper">
+              <img src="image/cam.png" alt="Live Stream">
+            </div>
+            <button class="service-btn">Live Stream</button>
+          </div>
+          <div class="item">
+            <div class="image-wrapper">
+              <img src="image/videotron.png" alt="Live Stream">
+            </div>
+            <button class="service-btn">Rental Videotron</button>
+          </div>
+          <div class="item">
+            <div class="image-wrapper">
+              <img src="image/tv2.png" alt="Live Stream">
+            </div>
+            <button class="service-btn">Rental TV</button>
+          </div>
+          <div class="item">
+            <div class="image-wrapper">
+              <img src="image/sound.png" alt="Live Stream">
+            </div>
+            <button class="service-btn">Sound System</button>
+          </div>
+          <div class="item">
+            <div class="image-wrapper">
+              <img src="image/lighting.jpg" alt="Live Stream">
+            </div>
+            <button class="service-btn">Lighting</button>
+          </div>
+          
         </div>
-        <button class="service-btn">Live Stream</button>
       </div>
-      <div class="item">
-        <div class="image-wrapper">
-          <img src="image/ca,.jpg" alt="Live Stream">
-        </div>
-        <button class="service-btn">Live Stream</button>
-      </div>
-      <div class="item">
-        <div class="image-wrapper">
-          <img src="image/ca,.jpg" alt="Live Stream">
-        </div>
-        <button class="service-btn">Live Stream</button>
-      </div>
-      <div class="item">
-        <div class="image-wrapper">
-          <img src="image/ca,.jpg" alt="Live Stream">
-        </div>
-        <button class="service-btn">Live Stream</button>
-      </div>
-      <div class="item">
-        <div class="image-wrapper">
-          <img src="image/ca,.jpg" alt="Live Stream">
-        </div>
-        <button class="service-btn">Live Stream</button>
-      </div>
-      
-    </div>
-  </div>
-</section>
+    </section>
 
 
   <!-- Why Choose Us Section -->
@@ -110,27 +112,27 @@
 
   <!-- About Us Section -->
     <section class="about" id="about">
-  <div class="container">
-    <div class="about-container">
-      <div class="about-image">
-        <img src="image/3.jpg" alt="About Us Photo" />
+      <div class="container">
+        <div class="about-container">
+          <div class="about-image">
+            <img src="image/3.jpg" alt="About Us Photo" />
+          </div>
+          <div class="about-text">
+            <h3>About Us</h3>
+            <h2>C9 Multimedia <span>Selalu Memberi yang Terbaik</span> </h2>
+            <p>
+              C9 Multimedia siap menjadi mitra terpercaya Anda dalam menyukseskan acara dengan
+              layanan multimedia dan broadcasting berkualitas tinggi. Dengan teknologi canggih, 
+              tim profesional, dan komitmen terhadap kepuasan pelanggan, kami memastikan setiap 
+              detail acara Anda terlaksana dengan sempurna.
+            </p>
+            <a href="#contact">
+              <button class="about-btn">Hubungi Kami</button>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="about-text">
-        <h3>About Us</h3>
-        <h2>C9 Multimedia <span>Selalu Memberi yang Terbaik</span> </h2>
-        <p>
-          C9 Multimedia siap menjadi mitra terpercaya Anda dalam menyukseskan acara dengan
-          layanan multimedia dan broadcasting berkualitas tinggi. Dengan teknologi canggih, 
-          tim profesional, dan komitmen terhadap kepuasan pelanggan, kami memastikan setiap 
-          detail acara Anda terlaksana dengan sempurna.
-        </p>
-        <a href="#contact">
-          <button class="about-btn">Hubungi Kami</button>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
   <!-- Our Team Section -->
@@ -162,94 +164,96 @@
       </div>
     </section>
 
-
   <!-- Portfolios Section -->
     <section class="portfolio" id="portfolio">
-  <div class="container">
-    <h2><span>Upcoming Events</span></h2>
-    <div class="portfolio-items">
-      
-      <div class="portfolio-item">
-        <img src="image/2.jpg" alt="Event">
-        <div class="badge">Digital Event</div>
-        <div class="event-meta">
-          <span class="date">2024.06.15</span>
+      <div class="container">
+        <h2><span> Events</span></h2>
+        <div class="portfolio-items">
+          
+          <div class="portfolio-item">
+            <img src="image/2.jpg" alt="Event">
+            <div class="badge">Digital Event</div>
+            <div class="event-meta">
+              <span class="date">2024.06.15</span>
+            </div>
+            <h4>Chatbots And Virtual Assistants</h4>
+            <p><i class="fas fa-map-marker-alt"></i> ACE EAST FOR AI WORKSPACE</p>
+          </div>
+
+          <div class="portfolio-item">
+            <img src="image/2.jpg" alt="Event">
+            <div class="badge">High Quality</div>
+            <div class="event-meta">
+              <span class="date">2024.11.08</span>
+            </div>
+            <h4>Modern Marketing Summit Sydney</h4>
+            <p><i class="fas fa-map-marker-alt"></i> ACE TOP LAB SYDNEY CITY</p>
+          </div>
+
+          <div class="portfolio-item">
+            <img src="image/2.jpg" alt="Event">
+            <div class="badge">Conferentation</div>
+            <div class="event-meta">
+              <span class="date">2024.12.17</span>
+            </div>
+            <h4>Registration For Opening Workshop</h4>
+            <p><i class="fas fa-map-marker-alt"></i> SYDNEY AREA, AUSTRALIA</p>
+          </div>
+
         </div>
-        <h4>Chatbots And Virtual Assistants</h4>
-        <p><i class="fas fa-map-marker-alt"></i> ACE EAST FOR AI WORKSPACE</p>
-      </div>
 
-      <div class="portfolio-item">
-        <img src="image/2.jpg" alt="Event">
-        <div class="badge">High Quality</div>
-        <div class="event-meta">
-          <span class="date">2024.11.08</span>
+        <div class="view-all-container">
+          <a href="portofolio.html" class="view-all-btn">View All</a>
         </div>
-        <h4>Modern Marketing Summit Sydney</h4>
-        <p><i class="fas fa-map-marker-alt"></i> ACE TOP LAB SYDNEY CITY</p>
       </div>
-
-      <div class="portfolio-item">
-        <img src="image/2.jpg" alt="Event">
-        <div class="badge">Conferentation</div>
-        <div class="event-meta">
-          <span class="date">2024.12.17</span>
-        </div>
-        <h4>Registration For Opening Workshop</h4>
-        <p><i class="fas fa-map-marker-alt"></i> SYDNEY AREA, AUSTRALIA</p>
-      </div>
-
-    </div>
-
-    <div class="view-all-container">
-      <a href="portofolio.html" class="view-all-btn">View All</a>
-    </div>
-  </div>
-</section>
+    </section>
 
 
  <!-- Footer Section -->
   <footer class="footer" id="contact">
     <div class="footer-container">
-      <div class="footer-left">
-        <div class="footer-logo">
-          <img src="image/logomm.png" alt="Logo" class="logo-img" />
-        </div>
-        <div class="footer-info">
-          <h4><strong>C9. <em>MULTIMEDIA</em></strong></h4>
-          <p>Pesat Gatra Village, Perumahan No.1 Blok O,<br>
-            Bakungan, Glagah, Banyuwangi</p>
-          <p><i class="fas fa-phone"></i> +62 81 559 555 555</p>
-          <p><i class="fas fa-envelope"></i> alzenmetrodata@gmail.com</p>
-        </div>
+      <div class="footer-section">
+        <img src="image/log4.png" alt="Logo" class="footer-logo">
       </div>
 
-      <div class="footer-right">
+      <div class="footer-section">
+        <h4>C9 MULTIMEDIA</h4>
+        <p>Pesat Gatra Village, Perumahan No.1 Blok O, Bakungan,
+          Glagah, Banyuwangi, Regency - East Java 68465
+        </p>
         <h4>Office Hour</h4>
-        <p>Senin-Sabtu : 09.00 - 17.00</p>
-        <!-- <p>Minggu : <span class="libur">Libur</span></p> -->
+        <p>09.00 - 17.00</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p><i class="fas fa-envelope"></i> alzenmetrodata@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +62 81 559 555 555</p>        
+      </div>
+
+      <div class="footer-section">
+        <h4>Our Social</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
     </div>
 
-  <div class="footer-bottom">
-      <div class="footer-bottom-content">
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fas fa-envelope"></i></a>
-          <a href="#"><i class="fab fa-whatsapp"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-        <p>&copy; 2025 Multimedia. All rights reserved.</p>
-      </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Multimedia. All Rights Reserved.</p>
     </div>
   </footer>
 
   <script>
-  function toggleMenu() {
-    const navbar = document.getElementById("navbar");
-    navbar.classList.toggle("show");
-  }
+    function toggleSidebar() {
+      const navbar = document.getElementById("navbar");
+      navbar.classList.toggle("open");
+    }
   </script>
+
 
 
 </body>
