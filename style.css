@@ -876,7 +876,6 @@ section, footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
   }
 
   .about-image {
@@ -950,6 +949,12 @@ section, footer {
     aspect-ratio: 4/3;
   }
 
+
+
+  .why-section, .service, .about, 
+  .team, .portfolio {
+    padding: 1rem 1rem;
+  }
 
   .footer {
     padding: 0.2rem 1.5rem;
