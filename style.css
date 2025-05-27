@@ -29,6 +29,7 @@ section, footer {
   margin: 0 auto;
 }
 
+
 /* Header */
 .header {
   background: url('image/landing.jpg') center/cover no-repeat;
@@ -165,7 +166,7 @@ section, footer {
   width: 100%;
   height: 180px;
   object-fit: cover;
-  border-bottom: 4px solid #c10104;
+  border-bottom: 4px solid #620a01;
 }
 
 .service-btn {
@@ -503,61 +504,32 @@ section, footer {
 }
 
 
-/* Portfolio */
+/* Header Content */
 
-.header-portofolio {
-  background: url('image/4.jpg') center/cover no-repeat;
+.header-content {
+  background: url('image/bc.png') center/cover no-repeat;
   color: #fff;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1.75rem 0.25rem;
+  padding: 0.75rem 0.25rem;
 
 }
 
-.header-portofolio .nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.2rem 0.6rem;
-  margin-top: 0;
-}
-
-.header-portofolio .logo {
-  font-weight: bold;
-  font-size: 1.5em;
-  color: #fff;
-}
-
-.header-portofolio .navbar a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 0.6rem;
-  padding: 0.5rem 1.0rem;
-  border-radius: 1.25rem;
-  transition: background 0.3s;
-}
-
-.header-portofolio .navbar a.active,
-.header-portofolio .navbar a:hover {
-  background: linear-gradient(to right, #c10104, #620a01);  
-  color: #ffffff;
-}
-
-.header-portofolio .hero-text {
+.header-content .hero-text {
   text-align: center;
   padding: 8.5rem 1.25rem;
 }
 
-.header-portofolio .hero-text h1 {
+.header-content .hero-text h1 {
   font-size: 2.5em;
   font-weight: bold;
   color: #fff;
   text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.6);
 }
 
-
+/* PORTOFOLIO */
 .portfolio-page {
   padding: 2.5rem 1.25rem;
   background-color: #000;
@@ -603,27 +575,6 @@ section, footer {
 }
 
 /* News */
-.header-news {
-  background: url('image/4.jpg') center/cover no-repeat;
-  color: #fff;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 1.75rem 0.25rem;
-  justify-content: space-between;
-}
-
-.header-news .hero-text {
-  text-align: center;
-  padding: 8.5rem 1.25rem;
-}
-
-.header-news .hero-text h1 {
-  font-size: 2.5em;
-  font-weight: bold;
-  color: #fff;
-  text-shadow: 0 0.12rem 0.31rem rgba(0, 0, 0, 0.6);
-}
 
 .news-title {
   font-size: 2.5em;
@@ -729,14 +680,16 @@ section, footer {
 }
 
 .footer-logo {
-  width: 16rem;
-  height: 10rem;
+  width: 12rem;
+  height: 12rem;
   object-fit: cover;
-  margin-bottom: 1rem;
+  border-radius: 50%;
+  background: #ccc;
+  box-shadow: 0 0 0.6rem rgb(255, 255, 255);
 }
 
 .footer-section h4 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #ffffff;
   margin-bottom: 0.2rem;
   text-transform: uppercase;
@@ -744,7 +697,7 @@ section, footer {
 
 .footer-section p {
   color: #e7e7e7;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-decoration: none;
   transition: color 0.3s ease;
   padding-right: 0.8rem;
@@ -759,7 +712,7 @@ section, footer {
 
 .social-icons a {
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   transition: color 0.3s ease;
 }
 
@@ -781,6 +734,147 @@ section, footer {
   text-decoration: none;
   margin: 0 0.4rem;
 }
+
+/* PRICELIST */
+
+.pricing-section {
+  background: radial-gradient(circle at center, #57000089 0%, #000000 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.pricing-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.pricing-cards img {
+  object-fit: cover;
+  border-bottom: 4px solid #620a01;
+}
+
+.price-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Samakan tinggi semua gambar */
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+
+.price-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 100%;
+  height: 100%;
+  background-color: #c10104;
+  border-radius: 1.2rem;
+  z-index: -1;
+}
+
+.price-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.overlay-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  z-index: 2;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.card {
+  background: #100200;
+  border-radius: 2rem;
+  width: 22rem;
+  box-shadow: inset 0 0 10px rgba(124, 62, 62, 0.575),
+              0 0 10px rgb(242, 190, 190);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  padding: 1rem 1.2rem 2.5rem;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 0 25px rgba(252, 181, 0, 0.503), inset 0 0 12px rgba(255, 255, 255, 0.667);
+}
+
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 0.5rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-bottom: 1rem;
+}
+
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  text-align: left;
+}
+
+.card ul li {
+  font-size: 0.95rem;
+  margin-bottom: 0.7rem;
+  display: flex;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.card ul li::before {
+  content: "✔";
+  color: #ff7700;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.price {
+  margin-top: auto;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  padding-top: 1rem;
+}
+
+.price .currency {
+  font-size: 1rem;
+  color: #aaa;
+}
+
 
 
 /* Responsive Layout untuk Mobile */
@@ -841,35 +935,69 @@ section, footer {
 
   .service-items {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 1.5rem;
-    justify-items: center;
+    justify-content: center;
+    padding: 1rem;
   }
 
   .service-items .item {
+    background-color: #1a1a1a;
+    border-radius: 1rem;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
-    max-width: 10rem; 
-    align-items: center;
+    max-width: 160px;
+  }
+
+  .service-items .item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.4);
   }
 
   .image-wrapper {
     width: 100%;
-    height: auto;
-    aspect-ratio: 3/4;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
   }
 
   .image-wrapper img {
-    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+  }
+
+  .item-title {
+    background-color: #c00000;
+    color: #fff;
+    padding: 0.75rem 0.5rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+  }
+
+  .service-items .item:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
   }
 
   .why-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .why-item {
     max-width: 100%;
     width: 100%;
+    padding: 0.8rem 0.5rem;
+  }
+
+  .why-item i, .why-item h4  {
+    margin: 0;  
   }
 
   .about-container {
@@ -933,7 +1061,7 @@ section, footer {
 
   .portfolio-items {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 1.5rem;
     justify-items: center;
   }
@@ -949,7 +1077,18 @@ section, footer {
     aspect-ratio: 4/3;
   }
 
+  .portfolio-item h4 {
+    margin: 0.5rem 1rem 0.2rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
 
+  .portfolio-item p {
+    margin: 0 1rem;
+    font-size: 0.5rem;
+    color: #cccccc;
+  }
 
   .why-section, .service, .about, 
   .team, .portfolio {
@@ -957,7 +1096,7 @@ section, footer {
   }
 
   .footer {
-    padding: 0.2rem 1.5rem;
+    padding: 1rem 1.5rem;
   }
 
   .footer-container {
@@ -974,8 +1113,8 @@ section, footer {
   }
 
   .footer-logo {
-    width: 12rem;
-    height: auto;
+    width: 9rem;
+    height: 9rem;
     margin-bottom: 0.5rem;
   }
 
