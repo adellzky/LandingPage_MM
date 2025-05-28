@@ -411,7 +411,69 @@ section, footer {
   color: #ccc;
 }
 
-/* Portfolio Landing */
+/* Porto Landing */
+
+.event-title {
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.event-item {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  transition: all 0.3s ease;
+}
+
+.event-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.event-item.dark img {
+  filter: grayscale(100%) brightness(50%);
+}
+
+.event-item:hover img {
+  filter: none;
+}
+
+.event-info {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.light-text {
+  color: #ff0004;
+}
+
+.dark-text {
+  color: #ffffff;
+}
+
+.event-info span {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+
+/* Portfolio */
 .portfolio {
   background: radial-gradient(circle at center, #140505 0%, #000000 100%);
   color: #ffffff;
@@ -529,52 +591,7 @@ section, footer {
   text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.6);
 }
 
-/* PORTOFOLIO */
-.portfolio-page {
-  padding: 2.5rem 1.25rem;
-  background-color: #000;
-  text-align: center;
-}
-
-.portfolio-page .portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15.6rem, 1fr));
-  gap: 1.8rem;
-  margin-top: 1.7rem;
-}
-
-.portfolio-page .portfolio-card {
-  background-color: #111;
-  border-radius: 0.6rem;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-  padding: 0 0 1.25rem;
-}
-
-.portfolio-page .portfolio-card:hover {
-  transform: scale(1.03);
-}
-
-.portfolio-page .portfolio-card img {
-  width: 100%;
-  height: 15.6rem; 
-  object-fit: cover;
-  border-radius: 0.6rem;
-}
-
-.portfolio-page .portfolio-card h4 {
-  color: #c10104;
-  margin: 0.8rem 0.6rem 0.3rem;
-  font-size: 1.2em;
-}
-
-.portfolio-page .portfolio-card p {
-  color: #ccc;
-  font-size: 0.8em;
-  padding: 0 0.625rem;
-}
-
-/* News */
+/* News Page */
 
 .news-title {
   font-size: 2.5em;
@@ -735,7 +752,7 @@ section, footer {
   margin: 0 0.4rem;
 }
 
-/* PRICELIST */
+/* Pricelist Page */
 
 .pricing-section {
   background: radial-gradient(circle at center, #57000089 0%, #000000 100%);
@@ -765,7 +782,7 @@ section, footer {
 .price-wrapper {
   position: relative;
   width: 100%;
-  height: 200px; /* Samakan tinggi semua gambar */
+  height: 200px;
   border-radius: 1.2rem;
   overflow: hidden;
 }
@@ -877,7 +894,7 @@ section, footer {
 
 
 
-/* Responsive Layout untuk Mobile */
+/* Responsive Mobile */
 @media (max-width: 48rem) {  
 
   .menu-toggle {
@@ -1149,5 +1166,212 @@ section, footer {
     width: 90%;
     max-width: 20rem;
   }
+
+  /* portolanding mobile */
+
+  .event-title {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.event-item {
+  position: relative;
+  overflow: hidden;
+  height: 20vh; 
+  transition: all 0.3s ease;
+}
+
+.event-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.event-item.dark img {
+  filter: grayscale(100%) brightness(50%);
+}
+
+.event-item:hover img {
+  filter: none;
+}
+
+.event-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 0.5rem; 
+  font-weight: bold;
+  color: inherit;
+  text-shadow: 0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.7);
+  width: 100%;
+  padding: 0 0.25rem;
+}
+
+.light-text {
+  color: #ff0004;
+}
+
+.dark-text {
+  color: #ffffff;
+}
+
+.event-info span {
+  display: block;
+  font-size: 0.5rem; 
+  font-weight: normal;
+}
+
+/* pricelist mobile */
+.pricing-section {
+  background: radial-gradient(circle at center, #57000089 0%, #000000 100%);
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.pricing-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-items: center;
+}
+
+.pricing-cards img {
+  object-fit: cover;
+  border-bottom: 0.2rem solid #620a01;
+}
+
+.price-wrapper {
+  position: relative;
+  width: 100%;
+  height: 16vh;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.price-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0.4rem;
+  left: 0.4rem;
+  width: 100%;
+  height: 100%;
+  background-color: #c10104;
+  border-radius: 1rem;
+  z-index: -1;
+}
+
+.price-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.overlay-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
+  z-index: 2;
+  text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.7);
+}
+
+.card {
+  background: #100200;
+  border-radius: 1.5rem;
+  width: 100%;
+  max-width: 18rem;
+  box-shadow: inset 0 0 0.5rem rgba(124, 62, 62, 0.5),
+              0 0 0.5rem rgba(242, 190, 190, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 0.8rem 1rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-0.6rem);
+  box-shadow: 0 0 1.2rem rgba(252, 181, 0, 0.5),
+              inset 0 0 0.6rem rgba(255, 255, 255, 0.6);
+}
+
+.card h3 {
+  font-size: 1rem;
+  color: #fff;
+  margin: 0.3rem 0;
+}
+
+.card p {
+  font-size: 0.75rem;
+  color: #ccc;
+  margin-bottom: 0.8rem;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.8rem 0;
+  text-align: left;
+}
+
+.card ul li {
+  font-size: 0.75rem;
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: start;
+  gap: 0.4rem;
+}
+
+.card ul li::before {
+  content: "✔";
+  color: #ff7700;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-top: 0.05rem;
+}
+
+.price {
+  margin-top: auto;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  padding-top: 0.5rem;
+}
+
+.price .currency {
+  font-size: 0.75rem;
+  color: #aaa;
+}
+
+
 
 }
