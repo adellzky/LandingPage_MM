@@ -473,7 +473,7 @@ section, footer {
 }
 
 
-/* Portfolio */
+/* Portofolio */
 .portfolio {
   background: radial-gradient(circle at center, #140505 0%, #000000 100%);
   color: #ffffff;
@@ -491,7 +491,7 @@ section, footer {
 .portfolio-items {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
   justify-content: center;
   margin-top: 2rem;
 }
@@ -500,7 +500,7 @@ section, footer {
   background: #271111;
   border-radius: 1rem;
   overflow: hidden;
-  width: 320px;
+  width: 18rem;
   text-align: left;
   position: relative;
   padding-bottom: 1rem;
