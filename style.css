@@ -406,10 +406,19 @@ section, footer {
   margin-bottom: 0.3rem;
 }
 
-.member p {
-  font-size: 0.95rem;
-  color: #ccc;
+.btn {
+  background:none;
+  color: #c10104;
+  text-decoration: none;
+  border:none;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
 }
+
+.btn:hover {
+  background: linear-gradient(to right,  #c10104, #620a01);
+  color: white;
+}
+
 
 /* Porto Landing */
 
@@ -703,20 +712,6 @@ section, footer {
 .row-bottom img {
   width: 100%;
   height: 200px;
-}
-
-/* Responsif */
-@media (max-width: 768px) {
-  .specialist-block {
-    flex-direction: column;
-  }
-  .row-top {
-    flex-direction: column;
-  }
-  .row-top img,
-  .row-bottom img {
-    height: auto;
-  }
 }
 
 
@@ -1195,10 +1190,11 @@ section, footer {
   .member {
     width: 100%;
     max-width: 10rem;
+    padding-top: 0.5rem;
   }
 
   .member img {
-    width: 100%;
+    width: 90%;
     height: auto;
     aspect-ratio: 3/4;
   }
@@ -1499,5 +1495,65 @@ section, footer {
   font-size: 0.75rem;
   color: #aaa;
 }
+
+/* Specilist Mobile */
+.specialist-section {
+    padding: 2rem 1rem;
+  }
+
+  .specialist-block {
+    gap: 1rem;
+  }
+
+  .specialist-text {
+    min-width: 40%;
+    max-width: 50%;
+  }
+
+  .specialist-text .tag {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.7rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .specialist-text h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .event-list {
+    font-size: 0.8rem;
+    padding-left: 1rem;
+  }
+
+  .event-list li {
+    margin-bottom: 0.3rem;
+  }
+
+  .specialist-gallery-wrapper {
+    max-width: 50%;
+    padding: 0.7rem;
+    border-radius: 1rem;
+  }
+
+  .image-box {
+    height: 100px;
+    border-radius: 0.7rem;
+  }
+
+  .image-box img {
+    height: 100%;
+    border-radius: 0.7rem;
+  }
+
+  .row-top,
+  .row-bottom {
+    gap: 0.7rem;
+  }
+
+  .row-top img,
+  .row-bottom img {
+    height: 100px;
+  }
 
 }
